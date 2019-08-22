@@ -15,6 +15,7 @@ RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
 ADD ./Gemfile $APP_HOME/Gemfile
+ADD ./danger.gemspec $APP_HOME/danger.gemspec
 
 RUN bundle install
 
